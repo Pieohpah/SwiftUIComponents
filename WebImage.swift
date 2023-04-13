@@ -1,6 +1,5 @@
 //
 //  WebImage.swift
-//  Pieus Production
 //
 //  Created by Peter Herber on 2023-04-06.
 //
@@ -66,8 +65,8 @@ struct WebImage: View {
                     self.image = uii
                 }
             } else {
-                print("ERROR: WebImage:loadImage - resource not found och not displayable [\(src)]")
-                print("ERROR: WebImage:loadImage - \(error?.localizedDescription ?? "")")
+                print("Error - WebImage.loadImage: resource not found och not displayable [\(src)]")
+                print("Error - WebImage.loadImage: \(error?.localizedDescription ?? "")")
             }
         }.resume()
     }
